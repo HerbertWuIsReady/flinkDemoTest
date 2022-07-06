@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.thrift:thrift:0.5.0-fix-thrift2402">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/thrift/thrift/0.5.0-fix-thrift2402/thrift-0.5.0-fix-thrift2402.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/thrift/thrift/0.5.0-fix-thrift2402/thrift-0.5.0-fix-thrift2402-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/thrift/thrift/0.5.0-fix-thrift2402/thrift-0.5.0-fix-thrift2402-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
