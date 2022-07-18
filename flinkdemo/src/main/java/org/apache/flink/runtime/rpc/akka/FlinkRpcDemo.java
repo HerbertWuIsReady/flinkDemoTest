@@ -13,14 +13,12 @@ import org.apache.flink.configuration.Configuration;
 import org.apache.flink.runtime.rpc.RpcEndpoint;
 import org.apache.flink.runtime.rpc.RpcGateway;
 import org.apache.flink.runtime.rpc.RpcService;
-//import org.apache.flink.runtime
 
 /**
  */
 public class FlinkRpcDemo {
     public static void main(String[] args) throws Exception{
 // 请开始你的表演！
-
         Configuration a = new Configuration();
         // TODO_MA 注释： 第一步： 启动 RPC 服务
 //        Class<?> aClass = Class.forName("org.apache.flink.runtime.rpc.akka.AkkaUtils");
