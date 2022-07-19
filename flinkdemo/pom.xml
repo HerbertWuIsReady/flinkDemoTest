@@ -271,13 +271,12 @@
             <scope>compile</scope>
         </dependency>
 
-        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.iceberg/iceberg-spark3-runtime &ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.iceberg</groupId>-->
-        <!--            <artifactId>iceberg-spark3-runtime</artifactId>-->
-        <!--            <version>0.12.0</version>-->
-        <!--        </dependency>-->
-
+        <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.8.0</version>
+        </dependency>
 
     </dependencies>
     <build>
