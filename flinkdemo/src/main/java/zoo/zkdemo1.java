@@ -19,7 +19,7 @@ public class zkdemo1 implements Watcher {
 
     @Override
     public void process(WatchedEvent watchedEvent) {
-        if (watchedEvent.getState() == Event.KeeperState.SyncConnected) {
+        if (watchedEvent.getState() == Watcher.Event.KeeperState.SyncConnected) {
             connectedSignal.countDown();
         }
     }
@@ -28,7 +28,7 @@ public class zkdemo1 implements Watcher {
 
         final zkdemo1 zkdemo1 = new zkdemo1();
 
-        zkdemo1.zk = new ZooKeeper("", 5000, zkdemo1);
+        zkdemo1.zk = new ZooKeeper("192.168.1.13:2181", 5000, zkdemo1);
 
         zkdemo1.connectedSignal.wait();
 
