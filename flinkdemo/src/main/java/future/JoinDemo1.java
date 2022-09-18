@@ -8,6 +8,6 @@ public class JoinDemo1 {
         new Thread().join();
 
 //        new FutureTask();
-        new Future()
+//        new Future()
     }
 }
