@@ -29,11 +29,9 @@ public class zkdemo1 implements Watcher {
 
         final zkdemo1 zkdemo12 = new zkdemo1();
 
-<<<<<<< HEAD
-        zkdemo1.zk = new ZooKeeper("192.168.1.13:2181", 5000, zkdemo1);
-=======
+
         zkdemo1.zk = new ZooKeeper("localhost:12188", 5000, zkdemo12);
->>>>>>> cdb5e8ffe76734f8c20e707f17ec0fe180a0f25f
+
 
         zkdemo12.connectedSignal.await();
 

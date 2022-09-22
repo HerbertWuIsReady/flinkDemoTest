@@ -28,6 +28,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-sdk-2.12.7" level="application" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:4.0.33.Final" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:17.0" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.12.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-core_2.12:3.0.3" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.paranamer:paranamer:2.8" level="project" />
@@ -89,7 +91,6 @@
     <orderEntry type="library" name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.hk2:hk2-api:2.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.hk2:hk2-utils:2.6.1" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.47.Final" level="project" />
     <orderEntry type="library" name="Maven: com.clearspring.analytics:stream:2.9.6" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-core:4.1.1" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-jvm:4.1.1" level="project" />
@@ -331,7 +332,6 @@
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-common:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-annotations:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:11.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.3.19.v20170502" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:9.3.19.v20170502" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:9.3.19.v20170502" level="project" />
