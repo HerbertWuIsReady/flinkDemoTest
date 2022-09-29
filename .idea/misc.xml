@@ -7,6 +7,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/flinkdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/imcommon/pom.xml" />
+        <option value="$PROJECT_DIR$/imclient/pom.xml" />
       </list>
     </option>
   </component>
