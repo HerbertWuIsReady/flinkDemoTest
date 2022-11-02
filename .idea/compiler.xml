@@ -7,13 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hadoopdemo" />
         <module name="flinkdemo" />
-        <module name="imcommon" />
         <module name="imclient" />
+        <module name="imcommon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="flinkdemo" target="11" />
+      <module name="hadoopdemo" target="1.7" />
       <module name="imclient" target="1.7" />
       <module name="imcommon" target="1.7" />
     </bytecodeTargetLevel>

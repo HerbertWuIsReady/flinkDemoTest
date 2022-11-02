@@ -30,6 +30,13 @@
     </repositories>
     <dependencies>
 
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>4.3.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
         <dependency>
             <groupId>org.apache.curator</groupId>

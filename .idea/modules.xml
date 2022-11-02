@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/flinkDemoTest.iml" filepath="$PROJECT_DIR$/.idea/flinkDemoTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/flinkdemo/flinkdemo.iml" filepath="$PROJECT_DIR$/flinkdemo/flinkdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadoopdemo/hadoopdemo.iml" filepath="$PROJECT_DIR$/hadoopdemo/hadoopdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/imclient/imclient.iml" filepath="$PROJECT_DIR$/imclient/imclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/imcommon/imcommon.iml" filepath="$PROJECT_DIR$/imcommon/imcommon.iml" />
     </modules>
