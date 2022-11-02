@@ -3,17 +3,24 @@
   <component name="CompilerConfiguration">
     <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="hadoopdemo" />
         <module name="flinkdemo" />
         <module name="imclient" />
+=======
+        <module name="imclient" />
+        <module name="calc" />
+>>>>>>> 7bfbedc75715fa4feb7fcdb5b6d295d28fe51973
         <module name="imcommon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="calc" target="1.7" />
       <module name="flinkdemo" target="11" />
       <module name="hadoopdemo" target="1.7" />
       <module name="imclient" target="1.7" />
