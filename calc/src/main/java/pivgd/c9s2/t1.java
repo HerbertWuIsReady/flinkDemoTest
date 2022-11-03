@@ -80,10 +80,6 @@ public class t1 {
 
     // 只能达到n2的时间复杂度
     public static void f2 (Node head) {
-<<<<<<< HEAD
-=======
-        HashSet<Integer> temp = new HashSet<Integer>();
->>>>>>> 46ffba67e81a6f6f2ac33dd12fb127129e6121f7
 
         Node cur1 = head.next;
         Node n = new Node ();
