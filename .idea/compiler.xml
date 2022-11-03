@@ -8,14 +8,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-<<<<<<< HEAD
         <module name="hadoopdemo" />
-        <module name="flinkdemo" />
-        <module name="imclient" />
-=======
         <module name="imclient" />
         <module name="calc" />
->>>>>>> 7bfbedc75715fa4feb7fcdb5b6d295d28fe51973
         <module name="imcommon" />
       </profile>
     </annotationProcessing>

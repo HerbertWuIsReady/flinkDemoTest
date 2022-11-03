@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/imcommon/pom.xml" />
         <option value="$PROJECT_DIR$/imclient/pom.xml" />
         <option value="$PROJECT_DIR$/hadoopdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/calc/pom.xml" />
       </list>
     </option>
   </component>

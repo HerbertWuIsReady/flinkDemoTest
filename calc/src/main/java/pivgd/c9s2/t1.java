@@ -51,7 +51,7 @@ public class t1 {
 
         System.out.println("--->");
 
-        f1(head);
+        f2(head);
     }
 
     // f1
@@ -79,25 +79,35 @@ public class t1 {
     }
 
     // 只能达到n2的时间复杂度
-    public static void f1 (Node head) {
-        HashSet<Integer> temp = new HashSet<Integer>();
+    public static void f2 (Node head) {
 
         Node cur1 = head.next;
-        Node cur2 = head.next;
         Node n = new Node ();
         Node nw = n;
+        Node last = n;
         boolean flag = false;
 
         while (cur1 != null) {
 
-            while (cur2.hashCode() != cur1.hashCode()) {
-                cur1.next
+
+            while (nw != null && nw.data != cur1.data) {
+                    nw = nw.next;
             }
 
+            if (nw == null || nw.data != cur1.data) {
+                nw = new Node();
+                nw.data = cur1.data;
+                last.next = nw;
+                last = nw;
+
+            }
+            nw = n ;
+            cur1 = cur1.next;
         }
 
         printAllNode(n);
     }
+
     public static void printAllNode(Node head) {
         while (head != null) {
             System.out.println(head);
