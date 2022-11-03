@@ -79,7 +79,7 @@ public class t1 {
     }
 
     // 只能达到n2的时间复杂度
-    public static void f1 (Node head) {
+    public static void f2 (Node head) {
         HashSet<Integer> temp = new HashSet<Integer>();
 
         Node cur1 = head.next;
@@ -91,7 +91,7 @@ public class t1 {
         while (cur1 != null) {
 
             while (cur2.hashCode() != cur1.hashCode()) {
-                cur1.next
+//                cur1.next
             }
 
         }
