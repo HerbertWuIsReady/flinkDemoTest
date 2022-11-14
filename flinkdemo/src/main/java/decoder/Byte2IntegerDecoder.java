@@ -8,6 +8,9 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.embedded.EmbeddedChannel;
 import io.netty.handler.codec.ByteToMessageDecoder;
+import org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import org.apache.parquet.hadoop.ParquetInputFormat;
 import scala.Byte;
 
 import java.util.List;
@@ -26,6 +29,9 @@ public class Byte2IntegerDecoder extends ByteToMessageDecoder {
 
     public static void main(String[] args) {
 
+//        SequenceFileInputFormat
+//        ParquetInputFormat
+        FileOutputFormat
         ChannelInitializer<EmbeddedChannel> channelInitializer = new ChannelInitializer<>() {
             @Override
             protected void initChannel(EmbeddedChannel embeddedChannel) throws Exception {

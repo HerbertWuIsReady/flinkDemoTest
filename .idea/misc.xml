@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/imclient/pom.xml" />
         <option value="$PROJECT_DIR$/hadoopdemo/pom.xml" />
         <option value="$PROJECT_DIR$/calc/pom.xml" />
+        <option value="$PROJECT_DIR$/datalake/pom.xml" />
       </list>
     </option>
   </component>
