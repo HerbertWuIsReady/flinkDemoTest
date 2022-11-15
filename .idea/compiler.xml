@@ -11,11 +11,13 @@
         <module name="hadoopdemo" />
         <module name="imclient" />
         <module name="calc" />
+        <module name="datalake" />
         <module name="imcommon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="calc" target="1.7" />
+      <module name="datalake" target="1.7" />
       <module name="flinkdemo" target="11" />
       <module name="hadoopdemo" target="1.7" />
       <module name="imclient" target="1.7" />
