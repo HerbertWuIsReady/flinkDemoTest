@@ -54,21 +54,21 @@ public class zkdemo1 implements Watcher {
 //        printZnode(data.toString());
     }
 
-    public static void printZnode(String path) throws Exception {
-//        System.out.println("-->"+path);
-        if (zkdemo1.zk.getAllChildrenNumber(path) >= 1) {
-            for (String child: zkdemo1.zk.getChildren(path, false)) {
-                String realPath = "";
-                if (path.equals("/")) {
-                    realPath = "/" + child;
-                } else {
-                    realPath = path + "/" + child;
-                }
-                printZnode(realPath);
-            }
-        } else {
-            System.out.println(path);
-        }
-    }
+//    public static void printZnode(String path) throws Exception {
+////        System.out.println("-->"+path);
+//        if (zkdemo1.zk.getAllChildrenNumber(path) >= 1) {
+//            for (String child: zkdemo1.zk.getChildren(path, false)) {
+//                String realPath = "";
+//                if (path.equals("/")) {
+//                    realPath = "/" + child;
+//                } else {
+//                    realPath = path + "/" + child;
+//                }
+//                printZnode(realPath);
+//            }
+//        } else {
+//            System.out.println(path);
+//        }
+//    }
 
 }

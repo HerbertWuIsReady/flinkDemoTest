@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.alibaba.ververica:ververica-connector-iceberg:1.13-vvr-4.0.7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/ververica/ververica-connector-iceberg/1.13-vvr-4.0.7/ververica-connector-iceberg-1.13-vvr-4.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/ververica/ververica-connector-iceberg/1.13-vvr-4.0.7/ververica-connector-iceberg-1.13-vvr-4.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/ververica/ververica-connector-iceberg/1.13-vvr-4.0.7/ververica-connector-iceberg-1.13-vvr-4.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

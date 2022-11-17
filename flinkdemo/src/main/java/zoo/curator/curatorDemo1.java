@@ -27,10 +27,10 @@ public class curatorDemo1 {
                 .build();
 
         curator1.start();
-        String s = curator1.create().creatingParentContainersIfNeeded() .withMode(CreateMode.PERSISTENT_SEQUENTIAL).forPath("/test/crud/node_5", "支付穿".getBytes(StandardCharsets.UTF_8));
-
-        System.out.println(s);
-        System.out.println(s.lastIndexOf("node_5"));
+//        String s = curator1.create().creatingParentContainersIfNeeded() .withMode(CreateMode.PERSISTENT_SEQUENTIAL).forPath("/test/crud/node_5", "支付穿".getBytes(StandardCharsets.UTF_8));
+//
+//        System.out.println(s);
+//        System.out.println(s.lastIndexOf("node_5"));
 
 //        Stat stat = curator1.checkExists().forPath("/test/crud/node_4");
 //

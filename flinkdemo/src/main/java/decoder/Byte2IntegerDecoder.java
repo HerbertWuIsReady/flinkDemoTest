@@ -31,7 +31,7 @@ public class Byte2IntegerDecoder extends ByteToMessageDecoder {
 
 //        SequenceFileInputFormat
 //        ParquetInputFormat
-        FileOutputFormat
+//        FileOutputFormat
         ChannelInitializer<EmbeddedChannel> channelInitializer = new ChannelInitializer<>() {
             @Override
             protected void initChannel(EmbeddedChannel embeddedChannel) throws Exception {
