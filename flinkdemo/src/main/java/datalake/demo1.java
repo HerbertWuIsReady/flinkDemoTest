@@ -83,12 +83,9 @@ public class demo1 {
                         new Path("file:///C:\\Users\\Noch\\Downloads\\flinkDemoTest\\aabb"), new SimpleStringEncoder<>("UTF-8")
                 ).withRollingPolicy(policyBuilder)
                 .withBucketCheckInterval(10000L)
-                .withOutputFileConfig()
                 .build();
 
         process.addSink(build);
-
-        env.execute("abc");
 
         env.execute("abc");
 
