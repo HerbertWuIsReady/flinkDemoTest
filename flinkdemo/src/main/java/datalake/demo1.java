@@ -3,12 +3,11 @@ package datalake;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.serialization.SimpleStringEncoder;
 import org.apache.flink.api.java.functions.KeySelector;
-import org.apache.flink.connector.file.sink.FileSink;
 import org.apache.flink.core.fs.Path;
+import org.apache.flink.runtime.state.filesystem.FsStateBackend;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.streaming.api.functions.sink.SinkFunction;
 import org.apache.flink.streaming.api.functions.sink.filesystem.StreamingFileSink;
 import org.apache.flink.streaming.api.functions.sink.filesystem.rollingpolicies.DefaultRollingPolicy;
 import org.apache.flink.streaming.api.functions.timestamps.BoundedOutOfOrdernessTimestampExtractor;
@@ -16,18 +15,9 @@ import org.apache.flink.streaming.api.functions.windowing.ProcessWindowFunction;
 import org.apache.flink.streaming.api.windowing.assigners.SlidingEventTimeWindows;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
-import org.apache.flink.table.data.GenericRowData;
-import org.apache.flink.table.data.RowData;
 import org.apache.flink.table.types.logical.BigIntType;
 import org.apache.flink.table.types.logical.RowType;
 import org.apache.flink.util.Collector;
-import org.apache.hadoop.conf.Configuration;
-import org.apache.iceberg.Schema;
-import org.apache.iceberg.flink.TableLoader;
-import org.apache.iceberg.flink.sink.FlinkSink;
-import org.apache.iceberg.types.Types;
-import org.apache.kafka.common.protocol.types.Field;
-
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -43,7 +33,9 @@ public class demo1 {
 
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-
+        env.setParallelism(1);
+        env.enableCheckpointing(1000);
+        env.setStateBackend(new FsStateBackend("file:///C:\\Users\\Noch\\Downloads\\flinkDemoTest\\aabbcc"));
         ArrayList<RowType.RowField> rowFields = new ArrayList<>();
         rowFields.add(new RowType.RowField("id" ,new BigIntType()));
 
@@ -86,38 +78,17 @@ public class demo1 {
                 .withInactivityInterval(TimeUnit.SECONDS.toMillis(10))
                 .withRolloverInterval(TimeUnit.SECONDS.toMillis(10))
                 .withMaxPartSize(1024 * 1024 * 1024).build();
+        Parquert
         final StreamingFileSink<String> build = StreamingFileSink.<String>forRowFormat(
                         new Path("file:///C:\\Users\\Noch\\Downloads\\flinkDemoTest\\aabb"), new SimpleStringEncoder<>("UTF-8")
                 ).withRollingPolicy(policyBuilder)
                 .withBucketCheckInterval(10000L)
+                .withOutputFileConfig()
                 .build();
 
         process.addSink(build);
 
         env.execute("abc");
-//        process.addSink(new SinkFunction<RowData>() {
-//            @Override
-//            public void invoke(RowData value) throws Exception {
-//                SinkFunction.super.invoke(value);
-//            }
-//        });
-//
-//       Schema schema = new Schema(
-//                Types.NestedField.required(1, "id", Types.LongType.get())
-//        );
-//
-//        TableLoader tableLoader = TableLoader.fromHadoopTable("file:///abc", new Configuration());
-//
-//        FlinkSink.forRowData(process)
-//                .tableLoader(tableLoader)
-//                .overwrite(false)
-//                .build();
-//
-//        DeltaSink<RowData> build = DeltaSink.forRowData(
-//                new Path("")
-//                , new Configuration()
-//                , rowType
-//        ).build();
 
         env.execute("abc");
 
