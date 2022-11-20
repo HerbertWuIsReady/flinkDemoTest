@@ -33,6 +33,7 @@ public class demo1 {
 
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
+
         env.setParallelism(1);
         env.enableCheckpointing(1000);
         env.setStateBackend(new FsStateBackend("file:///C:\\Users\\Noch\\Downloads\\flinkDemoTest\\aabbcc"));
@@ -78,7 +79,6 @@ public class demo1 {
                 .withInactivityInterval(TimeUnit.SECONDS.toMillis(10))
                 .withRolloverInterval(TimeUnit.SECONDS.toMillis(10))
                 .withMaxPartSize(1024 * 1024 * 1024).build();
-        Parquert
         final StreamingFileSink<String> build = StreamingFileSink.<String>forRowFormat(
                         new Path("file:///C:\\Users\\Noch\\Downloads\\flinkDemoTest\\aabb"), new SimpleStringEncoder<>("UTF-8")
                 ).withRollingPolicy(policyBuilder)
