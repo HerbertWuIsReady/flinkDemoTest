@@ -44,6 +44,7 @@ public class demo1 {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
 
+        env.setParallelism(1);
         ArrayList<RowType.RowField> rowFields = new ArrayList<>();
         rowFields.add(new RowType.RowField("id" ,new BigIntType()));
 
